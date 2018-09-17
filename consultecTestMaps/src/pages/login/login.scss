@@ -1,0 +1,64 @@
+page-login {
+    .background-init {
+        background: rgb(1, 28, 150);
+        border: #fff;
+    }
+    .ilist {
+        justify-content: center;
+        align-items: center!important;
+    }
+    .background-footer {
+        background: rgb(255, 255, 255);
+        border: rgb(6, 2, 255);
+    }
+    .buton-login-closeuser{
+        right:80%;
+    }
+    .div {
+        width: 100%;
+        text-align: center;
+      }
+      .input {
+        width: 40%;
+        letter-spacing: calc(6vw - 12px);
+        padding-left: calc(6vw - 12px);
+        text-align: center;
+      }
+      .pre {
+        display: block;
+        font-family: monospace;
+        white-space: pre;
+        margin: 4em 0;
+    }
+    .toolbar-background {
+        background: #fff;
+        border-color: transparent;
+    }
+    .slide-zoom {
+        height: 100%;
+    }
+    .slide-title {
+        margin-top: 2.8rem;
+        
+    }
+    .text-color-b {
+        color: #fff;
+    }
+    .slide-image {
+        max-height: 50%;
+        max-width: 60%;
+        margin: 18px 0;
+    }
+    b {
+        font-weight: 500;
+    }
+    p {
+        padding: 0 40px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #60646B;
+        b {
+            color: #000000;
+        }
+    }
+}

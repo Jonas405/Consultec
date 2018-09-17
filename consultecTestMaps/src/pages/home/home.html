@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Ubicaciones cerca de ti
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <agm-map id="mapsPlaces" (mapReady)="mapReady($event)" 
+  [latitude]="lat" [longitude]="lng" [scrollwheel]="true" [usePanning]="true" [zoom]="10">
+  <agm-direction [origin]="origin" [destination]="destination">
+  </agm-direction>
+    <agm-marker  *ngFor="let place of places" iconUrl="http://maps.google.com/mapfiles/ms/icons/blue-dot.png" [latitude]="place.lat" [longitude]="place.lng">
+      <agm-info-window>
+          <strong>{{ place.titulo }}</strong>
+        <div>
+          <button (click)="redirectToRoute( place )" ion-button>IR</button>
+        </div>
+      </agm-info-window>
+    </agm-marker>
+  </agm-map>
+</ion-content>

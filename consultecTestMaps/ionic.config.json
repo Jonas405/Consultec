@@ -1,0 +1,7 @@
+{
+  "name": "consultecTestMaps",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
